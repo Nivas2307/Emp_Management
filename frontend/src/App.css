@@ -230,6 +230,7 @@ html,
 }
 .details-card .right {
   flex: 1;
+
 }
 .details-card .row {
   display: flex;
@@ -341,8 +342,9 @@ html,
   gap: 5px;
 }
 .actions {
+  margin-top: 18px;
   display: flex;
-  gap: 8px;
+  gap: 10px;
   justify-content: center;
   align-items: center;
 }
@@ -352,10 +354,11 @@ html,
   color: #555;
   font-size: 16px;
   transition: color 0.2s;
+  border: none;
 }
 
 .action-icon:hover {
-  color: #1d4ed8; /* Blue on hover */
+  color: #1d4ed8; 
 }
 .breadcrumb-header {
   display: flex;

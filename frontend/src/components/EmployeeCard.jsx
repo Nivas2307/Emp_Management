@@ -1,5 +1,5 @@
 import React from "react";
-import { FaEye, FaTrash, FaEdit } from "react-icons/fa";
+import { FaRegEye, FaTrash, FaEdit } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
 export default function EmployeeCard({ emp, onDelete }) {
@@ -39,32 +39,32 @@ export default function EmployeeCard({ emp, onDelete }) {
       <td>{emp?.status || "-"}</td>
 
      <td className="actions">
-        <button
+        <div
           type="button"
-          className="action-btn view"
+          className="action-btn view  action-icon"
           title="View"
           onClick={() => navigate(`/employees/${empId}`)}
         >
-          <FaEye />
-        </button>
+          <FaRegEye />
+        </div>
 
-        <button
+        <div
           type="button"
-          className="action-btn edit"
+          className="action-btn edit  action-icon"
           title="Edit"
           onClick={() => navigate(`/employees/edit/${empId}`)}
         >
           <FaEdit />
-        </button>
+        </div>
 
-        <button
+        <div
           type="button"
-          className="action-btn delete"
+          className="action-btn delete action-icon"
           title="Delete"
           onClick={() => onDelete(empId)}
         >
           <FaTrash />
-        </button>
+        </div>
       </td>
     </tr>
   );

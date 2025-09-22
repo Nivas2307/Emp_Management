@@ -12,7 +12,7 @@ const app = express();
 // ~ Allow requests from any localhost port 
 app.use(
   cors({
-    origin: ["http://localhost:5174","http://localhost:5176"], 
+    origin: ["http://localhost:5174","http://localhost:5177"], 
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true
   })
